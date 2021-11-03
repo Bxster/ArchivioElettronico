@@ -9,7 +9,7 @@ public class Studente {
 	private int matricola;
     ArrayList<Esame> listaEsami = new ArrayList<Esame>();
     
-    public Studente(String nome , int matricola , ArrayList<Esame> listaEsami) 
+    public Studente(String nome  , ArrayList<Esame> listaEsami) 
     {
     	this.nome = nome;
     	this.matricola = NumeroUltimaMatricola;

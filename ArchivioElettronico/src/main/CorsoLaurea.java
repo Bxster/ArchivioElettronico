@@ -90,5 +90,15 @@ public class CorsoLaurea {
 		 return laureati ;
 	     
 	 }
+	 
+	 public boolean AddStudenteCorsoLaurea(CorsoLaurea cl , Studente s) 
+	 {
+		 if(!cl.trovaStudente(cl, s.getNome())) 
+		 {
+			 cl.listaStudenti.add(s);
+			 return true;
+		 }
+		 return false;
+	 }
 
 }

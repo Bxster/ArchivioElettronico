@@ -57,9 +57,10 @@ public class Esame {
 	// Aggiungere un esame al piano di studi
 	public boolean addEsame(Studente s , Esame e) 
 	{
-		for(int i=0 ; !s.listaEsami.isEmpty() ; i++) 
+		int i=0;
+		for(Esame e1 : s.listaEsami) //for(int i=0 ; !s.listaEsami.isEmpty() ; i++) 
 		{  // TODO LUCA : FINIRE IF , VEDERE SE L'ESAME AGGIUNTO SI TROVA O NO NEL PIANO DI STUDI
-			if(!s.listaEsami.equals(e)) { s.listaEsami.add(e); return true; }
+			if(!s.listaEsami.equals(e1)) { s.listaEsami.add(e1); return true; }
 		}
 		return false;
 	}
